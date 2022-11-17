@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var okashiDataList = OkashiData()
+    @State var inputText = ""
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")

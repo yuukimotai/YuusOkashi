@@ -13,9 +13,14 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
+            TextField("キーワード",
+                      text: $inputText,
+                prompt: Text("キーワードを入力して下さい"))
+            .onSubmit {
+                Task {
+                    await okashiDataList.searchOkashi(keyword: inputText)
+                }
+            }
         }
         .padding()
     }

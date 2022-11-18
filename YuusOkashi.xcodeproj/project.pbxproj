@@ -35,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9F6171992927ABB900C33544 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		9F6FCB1F2926522200539046 /* OkashiData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OkashiData.swift; sourceTree = "<group>"; };
 		9F99493C2924E205006AC5B8 /* YuusOkashi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YuusOkashi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F99493F2924E205006AC5B8 /* YuusOkashiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YuusOkashiApp.swift; sourceTree = "<group>"; };
@@ -96,6 +97,7 @@
 		9F99493E2924E205006AC5B8 /* YuusOkashi */ = {
 			isa = PBXGroup;
 			children = (
+				9F6171992927ABB900C33544 /* Info.plist */,
 				9F99493F2924E205006AC5B8 /* YuusOkashiApp.swift */,
 				9F9949412924E205006AC5B8 /* ContentView.swift */,
 				9F6FCB1F2926522200539046 /* OkashiData.swift */,
@@ -424,6 +426,9 @@
 				DEVELOPMENT_TEAM = 6Y2468JT4C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YuusOkashi/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -453,6 +458,9 @@
 				DEVELOPMENT_TEAM = 6Y2468JT4C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YuusOkashi/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

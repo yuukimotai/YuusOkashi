@@ -22,6 +22,7 @@ struct ContentView: View {
                 }
             }
         }
+        .submitLabel(.search)
         .padding()
     }
 }

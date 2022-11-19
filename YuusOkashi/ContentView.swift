@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @StateObject var okashiDataList = OkashiData()
     @State var inputText = ""
+    @State var showSafari = false
     
     var body: some View {
         VStack {
@@ -24,6 +25,28 @@ struct ContentView: View {
         }
         .submitLabel(.search)
         .padding()
+        
+        List(okashiDataList.okashiList) { okashi in
+            Button(action: {
+                showSafari.toggle()
+            }) {
+                HStack {
+                    AsyncImage(url: okashi.image) {image in
+                        image
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(height: 40)
+                    } placeholder: {
+                        ProgressView()
+                    }
+                    Text(okashi.name)
+                }
+            }//Button end
+            .sheet(isPresented: self.$showSafari, content: {
+                SafariView(url: okashi.link)
+                    .edgesIgnoringSafeArea(.bottom)
+            })
+        }
     }
 }
 
